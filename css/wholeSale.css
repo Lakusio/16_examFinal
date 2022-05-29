@@ -1,0 +1,20 @@
+/*** Wholesale ***/
+
+/*** Top ***/
+.wholesaleTopGrid {
+  grid-template-areas: "leftAir center rightAir";
+  grid-template-columns: 5% auto 5%;
+}
+
+/*** Mid ***/
+.wholesaleMidGrid {
+  grid-template-areas: "leftAir left right rightAir";
+  grid-template-columns: 5% auto auto 5%;
+}
+
+/*** Bottom ***/
+.wholesaleBottomGrid {
+  grid-template-areas: "leftAir left right rightAir";
+  grid-template-columns: 5% auto auto 5%;
+}
+/******************************/

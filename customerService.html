@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+
+<title>Customer Service - Artic Sari Sari Store</title>
+<link rel="icon" type="" href="">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/customerService.css">
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+
+<head>
+    <!--Favicon-->
+
+</head>
+
+<body>
+    <header id="sticky-header" class="grid headerGrid">
+        <div class="grid-left">
+            <!-- <p>HEADER LEFT</p> -->
+        </div>
+        <div class="grid-center centerTextHeader">
+            <p>Åbningstider i dag: <span id="openingHours"></span></p>
+
+        </div>
+        <div class="grid-right rightTextHeader">
+            <nav class="top_menu">
+                <!-- Curtain menu overlay -->
+                <div id="myNav" class="overlay">
+
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="index.html">Forside</a>
+                        <a href="about.html">Om os</a>
+                        <a href="balikbayanbox.html">Balikbayan Box</a>
+                        <a href="wholesale.html">Engros</a>
+                        <a href="customerService.html">Kundeservice</a>
+                        <a href="https://www.selya.dk/articSariSari/shop/">Webshop</a>
+                    </div>
+                </div>
+
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="customerService" class="grid customerServiceGrid">
+            <div class="grid-leftAir">
+            </div>
+            <div class="grid-center">
+                <h1>Kundeservice</h1>
+                <!-- Taken from https://www.w3schools.com/howto/howto_js_tabs.asp -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Kontakt')" id="defaultOpen">Kontakt</button>
+                    <button class="tablinks" onclick="openTab(event, 'Fragt')">Fragt</button>
+                    <button class="tablinks" onclick="openTab(event, 'Reklamation')">Reklamation og
+                        returnering</button>
+                    <button class="tablinks" onclick="openTab(event, 'Fortrolighed')">Fortrolighed</button>
+                    <button class="tablinks" onclick="openTab(event, 'Cookie')">Cookie</button>
+                </div>
+
+                <div id="Kontakt" class="tabcontent">
+                    <h3>Kontakt</h3>
+                    <p>Artic Sari Sari Store
+
+                        Jagtvej 13, 3900 Nuuk
+
+                        CVR Nummer: XX XX XX XX
+                        Reg Nummer: APS XXX.XXX
+
+                        E-mail: sarisari.3900@gmail.com
+                        Vi bestræber os på at svare alle emails indenfor 1-2 hverdage.
+
+                        Bank information:
+
+                        GrønlandsBanken
+
+                        Reg. nr.: XXXX
+
+                        Kontonummer: XXXXXXXXXX
+
+                        Swift nr.: XXXXXXXX
+
+                        IBAN nr.: DKXXXXXXXXXXXXXXXX
+                    </p>
+                </div>
+
+                <div id="Fragt" class="tabcontent">
+                    <p>Er du bosat uden for Nuuk så har vi følgende fragt muligheder som du kan anvende.</p>
+
+                    <h3>Skibstransport</h3>
+                    <p>
+                        Sendes via Blue Water Shipping og Royal Artic Line.
+                    </p>
+                    <p>
+                        Pris 300kr. For dette beløb kan der sendes op til max. fire fyldte flyttekasser med dagligevare
+                        og andet godt fra webshoppen.
+                        Vi sørger for at finde alle dine vare og pakker dine kasser professionelt, med maksimering af
+                        pladsen sikkerhed af dine produkter. Herefter opretter vi track-and-trace på din bestilling og
+                        levere den til transportøren som sørger for at din bestilling kommer til nærmeste havn i
+                        nærheden af dig.
+                        Ønsker du at købe mere end 4 flyttekasser kan du kontakte os for fragtpriserne på dette.
+                    </p>
+
+                    <h3>Flytransport</h3>
+                    <p>Sendes via Telepost</p>
+                    <p>
+                        Ønsker du blot at sende en lille pakke eller mindre volumen, sender denne via Telepost, så fremt
+                        dette er muligt.
+                        Priserne på dette baseres sig på gældende forsendelsesgebyrer hos Telepost.
+                        Når din bestilling er modtaget, vil vi kontakte dig omkring forsendelsesgebyr på netop din
+                        bestilling, da vi herefter har nøjagtige styr på vægt og forsendelse gebyr af din ordre.
+                        Telepost gebyrer er baseret på fragt ud af Nuuk som du kan se her.
+                        Bemærk venligst, at sendes din pakke via Telepost, vil vi ikke være i stand til at spore dine
+                        varer, før du modtager den.
+                    </p>
+                </div>
+
+                <div id="Reklamation" class="tabcontent">
+
+                    <p>Købelovens mangelsregler finder anvendelse på varekøb. Du kan nemt reklamere over fejl eller
+                        mangler ved en vare. Dette kan gøres via e-mail: sarisari.3900@gmail.com. Vi beder dig kontakte
+                        os,
+                        inden du evt. sender varen retur. Du har 24 måneders reklamationsret, fra du har modtaget din
+                        vare. Du skal reklamere inden for en rimelig tid efter, at du har opdaget manglen.
+
+                        Hvis din reklamation er berettiget, betyder det, at du enten kan få varen repareret, ombyttet,
+                        pengene tilbage eller et afslag i prisen, afhængig af den konkrete situation.
+
+                        Er reklamationen berettiget, refunderer vi dine (rimelige) fragtomkostninger. Varen skal altid
+                        sendes tilbage i forsvarlig emballage. Husk også at få en kvittering for afsendelse, så vi kan
+                        tilbagebetale dine fragtomkostninger.
+                    </p>
+
+                    <h3>Varen sendes til:</h3>
+                    <p>Artic Sari Sari Store
+
+                        Jagtvej 13, 3900 Nuuk
+
+                        Vi modtager kun pakker, som sendes direkte til adressen.
+
+                        Når du returnerer varen, bedes du vedlægge en detaljeret beskrivelse af problemet.
+                    </p>
+
+                    <h3>Fortrydelsesret:</h3>
+                    <p>Som forbruger har du 14 dages fortrydelsesret, når du handler hos på Artic Sari Sari Store.
+                        Fortrydelsesfristen udløber 14 dage efter den dag, du har modtaget din vare. Hvis du har bestilt
+                        flere forskellige varer i én ordre, men de leveres enkeltvist, løber fristen fra den dag, hvor
+                        du modtager den sidste vare.
+
+                        Drejer det sig om en aftale om regelmæssig levering af varer over en bestemt periode, udløber
+                        fortrydelsesfristen 14 dage efter den dag, du modtager den første vare.
+
+                        Fristen indebærer, at du har 14 dage fra modtagelsen til at give os besked om, at du vil
+                        fortryde dit køb. Du kan sende en mail til sarisari.3900@gmail.com eller benytte
+                        standardfortrydelsesformularen, som du finder nederst i handelsbetingelserne.
+
+                        Du kan ikke fortryde købet ved at nægte at modtage varen uden samtidig at give os besked.
+                    </p>
+
+                    <h3>Returnering:</h3>
+                    <p>Når du har givet os besked om, at du vil fortryde dit køb, har du 14 dage til at sende varen
+                        tilbage til os. Du skal give os meddelelse om, at du ønsker at fortryde dit køb på
+                        sarisari.3900@gmail.com
+
+                        Du skal selv betale for at pakken returneres, og det er dig, der hæfter, hvis der opstår en
+                        skade under transporten. Vi modtager ikke pakker uden omdeling.
+                    </p>
+
+                    <h3>Varens stand, når du sender den retur:</h3>
+                    <p>
+                        Hvis varen har mistet værdi, og det skyldes at du har brugt den på en anden måde, end hvad der
+                        var nødvendigt for at fastslå varens art, egenskaber og den måde, den fungerer, kan du kun få en
+                        del af købsbeløbet tilbage. Beløbet, du kan få tilbage, afhænger af varens handelsmæssige værdi,
+                        og i visse tilfælde kan det betyde, at du kun kan få fragtomkostningerne tilbage.
+
+                        Vi anbefaler, at du sender varen retur i den originale emballage.
+
+                        Hvis den originale emballage mangler, kan det muligvis medføre en værdiforringelse af varen.
+                    </p>
+
+                    <h3>Tilbagebetaling af købsbeløbet:</h3>
+                    <p>Hvis du fortryder dit køb, får du dine penge tilbage. Hvis varen er værdiforringet, fratrækker vi
+                        det beløb, du hæfter for.
+
+                        Vi refunderer alle betalinger modtaget fra dig, herunder leveringsomkostninger (det gælder dog
+                        ikke ekstra leveringsomkostninger i de tilfælde, hvor du har valgt en anden leveringsform, end
+                        den billigste form for standardlevering, som vi tilbyder), senest 14 dage fra den dag, hvor vi
+                        har modtaget din besked om, at du vil fortryde aftalen.
+
+                        Vi tilbagefører pengene med samme betalingsmiddel, som du benyttede ved købet, medmindre vi
+                        har aftalt andet.
+                        Vi kan tilbageholde betalingen, indtil vi har modtaget varen, med mindre du sender os
+                        dokumentation for at have returneret den.
+                    </p>
+                </div>
+
+                <div id="Fortrolighed" class="tabcontent">
+                    <h3>Persondata og fortrolighed</h3>
+                    <p>Vi har brug for følgende oplysninger, når du handler hos os:
+
+                        *Navn
+                        *Adresse
+                        *Telefon nummer
+                        *E-mailadresse
+
+                        Oplysninger afgivet til Artic Sari Sari Store videregives eller sælges ikke til tredjepart, og
+                        vi
+                        registrerer ingen personfølsomme oplysninger.
+
+                        Personoplysningerne registreres hos Artic Sari Sari Store ApS og opbevares i fem år, hvorefter
+                        oplysningerne slettes.
+
+                        Vi samarbejder herudover med en række andre virksomheder, som opbevarer og behandler data.
+                        Virksomhederne behandler udelukkende oplysninger på vores vegne og må ikke bruge dem til egne
+                        formål.
+
+                        Vi samarbejder kun med databehandlere i EU eller i lande, der kan give dine oplysninger en
+                        tilstrækkelig beskyttelse.
+
+                        Den dataansvarlige er Artic Sari Sari Store ApS. Den primære kontaktperson er Ogrim Alfar.
+
+                        Du har ret til at få oplyst, hvilke oplysninger vi behandler om dig.
+
+                        Hvis du mener, at oplysningerne er unøjagtige, har du ret til at få dem rettet. I nogle tilfælde
+                        har vi pligt til at slette dine persondata, hvis du beder om det. Det kan f.eks. være hvis dine
+                        data ikke længere er nødvendige i forhold til det formål, som vi skulle bruge dem til. Du kan
+                        også kontakte os, hvis du mener, at dine persondata bliver behandlet i strid med lovgivningen.
+
+                        Du kan skrive til os på: sarisari.3900@gmail.com </p>
+
+                    <h3>Betaling med kort</h3>
+                    <p>Hvis du betaler med betalingskort er du altid sikret imod misbrug. Ifølge dansk lovgivning har du
+                        mulighed for at afvise en betaling, når du modtager din betalingsoversigt. Betaling via
+                        bankoverførsel er ikke dækket af indsigelsesordningen.
+
+                        Al betaling med kreditkort på Artic Sari Sari Store foregår igennem det ekstrerne
+                        betalingssystem XXXX. Al
+                        kommunikation er krypteret, og hverken Artic Sari Sari Store eller andre har mulighed for at
+                        læse dine
+                        kortoplysninger.</p>
+                </div>
+
+                <div id="Cookie" class="tabcontent">
+                    <h3>Hvorfor bruger vi cookies?</h3>
+                    <p>Artic Sari Sari Store bruger cookies og andre lignende sporingsteknologier for at give dig fuld
+                        funktionalitet på websitet, for at tilpasse brugeroplevelsen, udføre analyser og for at kunne
+                        levere personligt tilpasset reklame på vores hjemmeside, apps og nyhedsbreve på internettet samt
+                        via de sociale medier.</p>
+
+                    <h3>Hvem er ansvarlig for cookies?</h3>
+                    <p>Artic Sari Sari Store og den navngivne udgiver er begge den dataansvarlige og er ansvarlig for de
+                        cookies, der downloades på din enhed, når du åbner et af vores officielle websteder og for
+                        adgangen og indsamling af data fra samme enhed.</p>
+
+                    <h3>Hvad er en cookie?</h3>
+                    <p>En “cookie” er en lille tekstfil, der downloades til din enhed, f.eks. en computer eller
+                        smartphone, når du åbner vores websteder.
+
+                        Vi bruger cookies og andre lignende teknologier for at få vores websted til at fungere effektivt
+                        og sikkert og for at forbedre den tilpassede brugeroplevelse.
+
+                        Når vi refererer til cookies, inkluderer vi:
+                        første- og tredjepartscookies,
+                        sporing af pixels og plug-ins, herunder teknologier fra tredjepartsudgivere,
+                        andre sporingsteknologier.
+
+                        Alle cookies har en udgiver, der fortæller dig, hvem cookien tilhører. Udgiveren er ejeren af
+                        det domæne, der er angivet i cookien. Hver gang du besøger vores websted, placerer vi cookies på
+                        din enhed af forskellige årsager. Sådanne cookies kaldes “førstepartscookies”, mens cookies, der
+                        er placeret af en tredjepartsvirksomhed, som f.eks. en social medieplatform eller
+                        annonceringsudbydere af annonceteknologi, kaldes “tredjepartscookies”.
+
+                        Nedenfor finder du mere detaljerede oplysninger om vores cookies og grunden til at bruge dem.
+                    </p>
+
+                    <h3>Hvordan trækker du dit cookie-samtykke tilbage?</h3>
+                    <p>Du kan når som helst deaktivere dine cookies, der ikke er strengt nødvendige, ved at trække dit
+                        samtykke tilbage. Du administrerer dine cookie-samtykker i Cookie-indstillinger nederst på dette
+                        websted.
+
+                        Ud over at du kan tilbagetrække dit samtykke, kan du nemt forhindre din browser i at acceptere
+                        cookies ved at ændre opsætning af din browsers cookieindstillinger.
+
+                        Alle kommercielle webbrowsere er udstyret med funktioner til administration af cookies.
+
+                        Kontrollér din webbrowser for at finde ud af, hvordan du sletter eller deaktiverer cookies osv.
+
+                        Hvis du vælger at deaktivere cookies, kan funktionaliteten være begrænset, og du kan få en
+                        forringet brugeroplevelse.</p>
+
+                    <h3>Hvad er den retlige grund til at bruge cookies?</h3>
+                    <p>Ved at acceptere cookies helt eller delvist giver du os dit samtykke til at bruge cookies til de
+                        specifikke formål angivet ovenfor. Du kan ikke acceptere brugen af strengt nødvendige cookies,
+                        da disse er er nødvendige for at opretholde vores tjenester og kan derfor ikke fravælges.</p>
+
+                    <h3>Hvem har adgang til oplysninger om cookies?</h3>
+                    <p>Oplysninger, der indhentes fra cookies, deles inden for Artic Sari Sari Store i det omfang, det
+                        er
+                        nødvendigt for at opfylde sit formål. Oplysninger, der hentes fra tredjepartscookies, er også
+                        tilgængelige for tredjepartsudbyderen, der placerer cookien på vores side. Vi vil ikke dele
+                        oplysninger om førstepartscookies med tredjepart eller sælge, bytte eller på anden måde
+                        videregive sådanne oplysninger med nogen uden for Artic Sari Sari Store.</p>
+
+                    <h3>Hvor længe gemmes cookies i din browser eller på din enhed?</h3>
+                    <p>Cookies kan gemmes i forskellige tidsrum på din browser eller enhed.</p>
+
+                    <h3>Permanente cookies</h3>
+                    <p>Permanente cookies gemmes i en af din browsers undermapper, indtil du sletter dem manuelt, enten
+                        ved at trække dit samtykke tilbage eller ved at ændre dine browserindstillinger. Hvis du ikke
+                        foretager dig noget, slettes permanente cookies fra din browser, når varigheden i cookiefilen
+                        udløber. Deres varighed afhænger af udløbsdatoen, der er skrevet i dem.</p>
+
+                    <h3>Sessionscookies</h3>
+                    <p>Sessionscookies slettes straks, når du lukker din browser. Når du genstarter din browser og går
+                        tilbage til det websted, der oprettede cookien, genkender webstedet dig ikke. </p>
+                </div>
+            </div>
+            <div class="grid-rightAir"></div>
+    </main>
+
+
+
+    <footer class="grid footerGrid centerTextFooter">
+        <div class="grid-left">
+            <h4>Kontakt</h4>
+            <p>Telefon: +299 26 98 59</p>
+            <p>Email: sarisari.3900@gmail.com</p>
+        </div>
+        <div class="grid-center copyPad">
+            <p>©2022 by Arctic Sari Sari Store ApS | CVR-nummer 42179272</p>
+        </div>
+        <div class=" grid-right">
+            <a href="https://www.facebook.com/ArcticSariSariStoreApS" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/arcticsarisaristore/?igshid=1n8qucpmk3xgd" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+
+    <!-- load JS -->
+    <script src="js/header.js"></script>
+    <script src="js/service.js"></script>
+</body>
+
+</html>

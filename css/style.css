@@ -1,0 +1,152 @@
+/*** Global ***/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+img {
+  max-width: 100%;
+}
+/******************************/
+
+/*** Grid ***/
+.grid {
+  display: grid;
+}
+
+.grid-leftAir {
+  grid-area: leftAir;
+}
+
+.grid-left {
+  grid-area: left;
+}
+
+.grid-centerLeft {
+  grid-area: centerLeft;
+}
+.grid-center {
+  grid-area: center;
+}
+
+.grid-centerRight {
+  grid-area: centerRight;
+}
+
+.grid-right {
+  grid-area: right;
+}
+
+.grid-rightAir {
+  grid-area: rightAir;
+}
+/******************************/
+
+/*** Text ***/
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+/******************************/
+
+/*** Header ***/
+header {
+  width: 100%;
+  background: #ffffff;
+  position: fixed;
+}
+
+.headerGrid {
+  grid-template-areas: "left center right";
+}
+
+.centerTextHeader {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.rightTextHeader {
+  text-align: right;
+  padding-right: 10px;
+}
+/******************************/
+
+/*** Main ***/
+main {
+  padding: 50px 0;
+}
+/******************************/
+
+/***  ***/
+/******************************/
+
+/*** Footer ***/
+.footerGrid {
+  width: 100%;
+  grid-template-areas: "left center center right";
+}
+
+.centerTextFooter {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.copyPad {
+  padding-top: 25px;
+}
+/******************************/
+
+/*** SoMe ***/
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #55acee;
+  color: white;
+}
+/******************************/
+
+/*** Media query ***/
+@media only screen and (max-width: 800px) {
+}
