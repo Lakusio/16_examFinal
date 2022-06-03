@@ -1,226 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex">
-
-<title>Arctic Sari Sari Store</title>
-<link rel="icon" type="" href="">
-
-<!-- CSS -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/menu.css">
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/indexSlider.css">
-
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap"
-    rel="stylesheet">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctic Sari Sari Store</title>
 
-    <!--Favicon-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 
+    <!-- load HTML and JS -->
+    <script src="js/include.js"></script>
+    <script src="js/header.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header id="sticky-header" class="grid headerGrid">
-        <div class="grid-left"></div>
-        <div class="grid-center centerTextHeader">
-            <p>Åbningstider i dag: <span id="openingHours"></span></p>
+    <header class="main">
 
-        </div>
-        <div class="grid-right rightTextHeader">
-            <nav class="top_menu">
-                <!-- Curtain menu overlay -->
-                <div id="myNav" class="overlay">
+        <!-- Indsæt Header-snippet -->
+        <div w3-include-html="header.html"></div>
 
-                    <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                    <!-- Overlay content -->
-                    <div class="overlay-content">
-                        <a href="index.html">Forside</a>
-                        <a href="about.html">Om os</a>
-                        <a href="balikbayanbox.html">Balikbayan Box</a>
-                        <a href="wholesale.html">Engros</a>
-                        <a href="customerService.html">Kundeservice</a>
-                        <a href="https://www.selya.dk/articSariSari/shop/">Webshop</a>
-                    </div>
-                </div>
-
-                <!-- Use any element to open/show the overlay navigation menu -->
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            </nav>
-        </div>
     </header>
 
-    <main>
-        <div id="splash" class="grid splashGrid">
-            <div class="grid-leftAir">
-            </div>
-            <div class="grid-center">
-                <img src="assets/img/253898638_10157922569652723_5413267649065224848_n.webp" alt="">
-            </div>
-            <div class="grid-rightAir">
+    <section class="main">
+        <div class="grid col1">
+            <div class="verticalSpacer"></div>
+            <div><img src="assets/img/StoreFront1.webp" alt="Store Front">
             </div>
         </div>
-
-        <div id="statment" class="grid statmentGrid">
-            <div class="grid-leftAir"></div>
-
-            <div class="grid-left">
-                <img src="assets/banner/Transport 2 3-2.webp" alt="Ship in ice">
-            </div>
-
-            <div class="grid-center">
-                <img src="assets/banner/About 1 3-2.webp" alt="Wall with posters">
-            </div>
-
-            <div class="grid-right">
-                <img src="assets/banner/Balikbayan-box 4 3-2.webp" alt="Balikbayan Box">
-            </div>
-
-            <div class="grid-rightAir"></div>
+        <div class="grid col3">
+            <div><a class="statement" href="wholeSale.html"><img src="assets/img/Transport 2 3-2.webp"
+                        alt="Ship in ice"></a> </div>
+            <div><a class="statement" href="aboutUs.html"><img src="assets/img/About 1 3-2.webp"
+                        alt="Wall with posters"></a></div>
+            <div><a class="statement" href="balikbayanBox.html"><img src="assets/img/Balikbayan-box 4 3-2.webp"
+                        alt="Balikbayan Box"></a></div>
         </div>
 
-        <div id="info" class="grid infoGrid">
-            <div class="grid-leftAir"></div>
-            <div class="grid-left justCenter">
-                <img src="assets/statements/LadyPresenting.svg" alt="">
+        <div class="grid col4">
+            <div><img class="icon" src="assets/statements/LadyPresenting.svg" alt="Presenting lady icon">
                 <h3>Rådgivning</h3>
-                <p>Om det er fysisk eller online, så står vi altid klar til at hjælpe med dine indkøb.</p>
+                <p>Fysisk eller online, Vi står altid klar med råd og vejledning til dine indkøb.</p>
             </div>
-
-            <div class="grid-centerLeft justCenter">
-                <img src="assets/statements/Parcel.svg" alt="">
+            <div><img class="icon" src="assets/statements/Parcel.svg" alt="Parcel icon">
                 <h3>Fragt</h3>
-                <p>Bor du på kysten, så kan vi sagtens hjælp med at få dine bestilling hurtigt og sikkert frem.</p>
+                <p>Bor du på kysten, sikrer vi at din bestilling kommer trygt og hurtigt frem.</p>
             </div>
-
-            <div class="grid-centerRight justCenter">
-                <img src="assets/statements/Scooter.svg" alt="">
-                <h3>Lokal levering</h3>
-                <p>Dag til dag, levering kan arrangere i Nuuk.</p>
+            <div><img class="icon" src="assets/statements/Scooter.svg" alt="Scooter icon">
+                <h3>Udbringning</h3>
+                <p>Bor du i Nuuk kan vi tilbyde "Dag til dag"-levering uden ekstra omkostninger.</p>
             </div>
-
-            <div class="grid-right justCenter">
-                <img src="assets/statements/smiley.svg" alt="">
+            <div><img class="icon" src="assets/statements/smiley.svg" alt="Smiley icon">
                 <h3>Tilfredshed</h3>
-                <p>Noget galt med din leverance, kontakt os så skal vi nok få det ordnet sammen.</p>
+                <p>Noget galt med din leverance? Kontakt os, så får vi sammen det ordnet.</p>
             </div>
+    </section>
+    <footer class="main">
 
-            <div class="grid-rightAir"></div>
-        </div>
+        <!-- Indsæt Footer-snippet -->
+        <div w3-include-html="footer.html"></div>
 
-        <!-- <div id="productSamples" class="grid productSamplesGrid">
-            <div class="grid-leftAir"></div>
-            <div class="grid-center">
-                <h1>Vores spændende produktgrupper i vores webshop</h1>
-                <div class="container">
-                    <div class="slider">
-                        <div class="slider-inner">
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>1</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>2</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>3</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>4</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>5</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>6</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>7</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>8</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>9</h2>
-                                </div>
-                            </div>
-
-                            <div class="slider-item">
-                                <div class="box">
-                                    <h2>10</h2>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="control">
-                            <button id="prev"><span>&ltrif;</span></button>
-                            <button id="next"><span>&rtrif;</span></button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="grid-rightAir"></div>
-            </div> -->
-    </main>
-
-    <footer class="grid footerGrid centerTextFooter">
-        <div class="grid-left">
-            <h4>Kontakt</h4>
-            <p>Telefon: +299 26 98 59</p>
-            <p>Email: sarisari.3900@gmail.com</p>
-        </div>
-
-        <div class="grid-center copyPad">
-            <p>©2022 by Arctic Sari Sari Store ApS | CVR-nummer 42179272</p>
-        </div>
-
-        <div class=" grid-right">
-            <a href="https://www.facebook.com/ArcticSariSariStoreApS" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/arcticsarisaristore/?igshid=1n8qucpmk3xgd" class="fa fa-instagram"></a>
-        </div>
     </footer>
 
-    <!-- load JS -->
-    <script src="js/header.js"></script>
-    <script src="js/indexSlider.js"></script>
+    <!-- Scripts/Functions -->
+    <script>
+        includeHTML();
+    </script>
+
 </body>
 
 </html>
